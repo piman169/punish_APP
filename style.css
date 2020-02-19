@@ -1,0 +1,104 @@
+html{
+  font-size: 62.5%;
+}
+body{
+  margin: 0;
+  padding: 0;
+  background: #222;
+  color: white;
+}
+.logo{
+  font-size: 2.2rem;
+  margin-left:11px;
+}
+#input_panish{
+  text-align: center;
+  background: none;
+  border: none;
+  outline: none;
+  color: #ccc;
+  width: 200px;
+  height: 38px;
+  font-size: 1.6rem;
+  margin: 30px;
+  box-shadow: -2px -2px 8px rgba(255, 0, 112, .7),
+              -2px -2px 12px rgba(55, 55, 55, 0.5),
+              inset 2px 2px 4px rgba(55, 55, 55, 0.1),
+              2px 2px 8px rgba(0, 112, 255, 0.7);
+  border-radius: 14px;
+}
+.punish_btn{
+  background: none;
+  border: none;
+  outline: none;
+  color: #ccc;
+  width: 70px;
+  height: 38px;
+  font-size: 1.6rem;
+  border-radius: 14px;
+  box-shadow: -2px -2px 8px rgba(255, 0, 112, .7),
+              -2px -2px 12px rgba(55, 55, 55, 0.5),
+              inset 2px 2px 4px rgba(55, 55, 55, 0.1),
+              2px 2px 8px rgba(0, 112, 255, 0.7);
+  cursor: pointer;
+}
+.punish_btn:active{
+  transform: translateY(3px);
+}
+#input_panish:hover{
+  transform: scale(1.1);
+}
+.punish_title{
+  text-align: center;
+  font-size: 2.1rem;
+  font-weight: 300;
+}
+.look_wrapper{
+  width: 70%;
+  height: 70vh;
+  margin: auto;
+  box-shadow: -2px -2px 8px rgba(255, 0, 112, .7),
+              -2px -2px 12px rgba(55, 55, 55, 0.5),
+              inset 2px 2px 4px rgba(55, 55, 55, 0.1),
+              2px 2px 8px rgba(0, 112, 255, 0.7);
+  border-radius: 8px;
+  overflow-y: scroll;
+}
+.punishment{
+  font-size: 2rem;
+  margin-left: 5px;
+  word-break: break-all;
+}
+.decision_btn,.new_btn{
+  text-align: center;
+  margin: 50px auto;
+  border: 4px solid red;
+  width: 500px;
+  height: 50px;
+  line-height: 50px;
+  font-size: 2.2rem;
+  border-radius: 14px;
+  cursor: pointer;
+  color: #ccc;
+  transition: .1s;
+}
+.punish_word{
+  display: flex;
+  justify-content: center;
+  font-size: 3rem;
+  word-break: break-all;
+}
+.decision_btn:hover,.new_btn:hover{
+  transform: scale(1.2);
+}
+.input_wrapper{
+  display: flex;
+  justify-content: center;
+}
+.hide_wrapper{
+  display: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
