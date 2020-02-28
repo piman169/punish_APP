@@ -6,18 +6,8 @@
     <link rel="stylesheet" href="style.css">
   </head>
   <body>
-    <h1 class="logo">PANISH APP</h1>
 
     <div class="wrapper">
-
-      <div class="input_wrapper">
-        <form class="form">
-          <input type="button" class="punish_btn" onclick="Delete_Punish()" value="削除">
-          <input type="text" id='input_panish'placeholder="罰ゲームを入力する" value="">
-          <input type="text" name="dummy" style="display:none;">
-          <input type="button" class="punish_btn" onclick="Add_Punish()" value="追加">
-        </form>
-      </div>
 
       <div class="look_wrapper">
         <h3 class="punish_title">PUNISHMENT LIST</h3>
@@ -26,8 +16,14 @@
         </div>
       </div>
 
-      <div class="decision_btn">罰ゲーム決定</div>
+      <div class="input_wrapper">
+          <input type="text" id='input_panish'placeholder="罰ゲームを入力する" value="">
+          <input type="text" name="dummy" style="display:none;">
+          <input type="button" class="punish_btn" onclick="Add_Punish()" value="追加">
+          <input type="button" class="punish_btn" onclick="Delete_Punish()" value="削除">
+      </div>
 
+      <div class="decision_btn">罰ゲーム決定</div>
     </div>
 
     <div class="hide_wrapper">
@@ -35,6 +31,7 @@
       <div class="new_btn">New_Game</div>
     </div>
 
-    <script src="app.js"></script>
+    <script src="../../JS/punish.js"></script>
+    <script src="../../JS/public.js"></script>
   </body>
 </html>

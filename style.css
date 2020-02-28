@@ -1,104 +1,88 @@
-html{
-  font-size: 62.5%;
-}
 body{
-  margin: 0;
-  padding: 0;
-  background: #222;
+  background:#333;
   color: white;
 }
-.logo{
-  font-size: 2.2rem;
-  margin-left:11px;
-}
-#input_panish{
+input{
+  font-size: 16px;
+  color: white;
   text-align: center;
   background: none;
   border: none;
   outline: none;
-  color: #ccc;
-  width: 200px;
-  height: 38px;
-  font-size: 1.6rem;
-  margin: 30px;
+  margin: auto;
+}
+.wrapper{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 88vh;
+  max-width: 700px;
+  margin:68px auto 0;
+  display: flex;
+  flex-direction: column;
+}
+/* punishmentlist */
+.look_wrapper{
   box-shadow: -2px -2px 8px rgba(255, 0, 112, .7),
               -2px -2px 12px rgba(55, 55, 55, 0.5),
               inset 2px 2px 4px rgba(55, 55, 55, 0.1),
               2px 2px 8px rgba(0, 112, 255, 0.7);
-  border-radius: 14px;
-}
-.punish_btn{
-  background: none;
-  border: none;
-  outline: none;
-  color: #ccc;
-  width: 70px;
-  height: 38px;
-  font-size: 1.6rem;
-  border-radius: 14px;
-  box-shadow: -2px -2px 8px rgba(255, 0, 112, .7),
-              -2px -2px 12px rgba(55, 55, 55, 0.5),
-              inset 2px 2px 4px rgba(55, 55, 55, 0.1),
-              2px 2px 8px rgba(0, 112, 255, 0.7);
-  cursor: pointer;
-}
-.punish_btn:active{
-  transform: translateY(3px);
-}
-#input_panish:hover{
-  transform: scale(1.1);
+  border-radius: 10px;
+  height: 600px;
+  width: 90%;
+  max-width: 650px;
+  overflow-y: scroll;
+  margin:0px auto 30px;
 }
 .punish_title{
   text-align: center;
-  font-size: 2.1rem;
-  font-weight: 300;
-}
-.look_wrapper{
-  width: 70%;
-  height: 70vh;
-  margin: auto;
-  box-shadow: -2px -2px 8px rgba(255, 0, 112, .7),
-              -2px -2px 12px rgba(55, 55, 55, 0.5),
-              inset 2px 2px 4px rgba(55, 55, 55, 0.1),
-              2px 2px 8px rgba(0, 112, 255, 0.7);
-  border-radius: 8px;
-  overflow-y: scroll;
+  padding-top:10px;
 }
 .punishment{
-  font-size: 2rem;
-  margin-left: 5px;
-  word-break: break-all;
+  padding-bottom: 20px;
+  margin: 30px;
 }
-.decision_btn,.new_btn{
-  text-align: center;
-  margin: 50px auto;
-  border: 4px solid red;
-  width: 500px;
-  height: 50px;
-  line-height: 50px;
-  font-size: 2.2rem;
-  border-radius: 14px;
-  cursor: pointer;
-  color: #ccc;
-  transition: .1s;
-}
-.punish_word{
-  display: flex;
-  justify-content: center;
-  font-size: 3rem;
-  word-break: break-all;
-}
-.decision_btn:hover,.new_btn:hover{
-  transform: scale(1.2);
-}
+/* ****************** */
+/* input Area */
 .input_wrapper{
-  display: flex;
-  justify-content: center;
+  text-align: center;
 }
+#input_panish{
+  display: block;
+  border: 2px solid rgba(255, 0, 112, .7);
+  border-radius: 3px;
+  width: 250px;
+  height: 50px;
+  font-size: 18px;
+  margin-bottom: 18px;
+}
+.punish_btn{
+  border:2px solid rgba(255, 0, 112, .7);
+  border-radius: 3px;
+  width: 125px;
+  height: 40px;
+}
+/* ********************** */
+/* hide and 決定ボタン */
 .hide_wrapper{
   display: none;
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%,-50%);
+}
+.decision_btn,.new_btn{
+  text-align: center;
+  margin:30px auto;
+  border:3px solid red;
+  width:300px;
+  height: 50px;
+  line-height: 50px;
+  font-size: 27px;
+  border-radius: 10px;
+}
+.punish_word{
+  font-size: 32px;
+  text-align: center;
 }
